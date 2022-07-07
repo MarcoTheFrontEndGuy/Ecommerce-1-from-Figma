@@ -1,0 +1,23 @@
+@use '../01-utils/mixins';
+
+.hero { 
+    background-color: var(--secondary-bg);
+    font-family: var(--heading-font);
+    display: flex;
+    padding-top: 81px;
+    padding-bottom: 60px;
+    line-height: 1.5
+}
+
+// this is hero left 
+.hero__header {
+    width: 58.1%;
+    padding-top: clamp(30px, 5vw, 155px);
+    padding-bottom: clamp(34px, 5vw, 184px); 
+    // background: skyblue;
+}
+
+// this is hero right 
+.hero__figure {
+    width: 41.9%
+}

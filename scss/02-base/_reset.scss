@@ -1,0 +1,101 @@
+@use '../01-utils/variables';
+
+
+html {
+  overflow-x: hidden;
+  font-size: 100%;
+}
+
+ 
+// Disable animation for users that don't want animations
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+}
+  
+// General margin and padding reset 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+// body {
+//   font-family: variables.$text-type-font;
+//   background-color: variables.$primary-bg;
+//   color: variables.$primary-color;
+// }
+
+body {
+  font-family: inherit;
+  background-color: inherit;
+  color: inherit;
+}
+
+
+// Reset default style and make it all inherited to make fast changes on the color theme 
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-family: inherit;                   /* ------------------------------------------- I did this one */
+  font-size: 1rem;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color:inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+// Set max-width to 100% to fix issues for videos, images... 
+img, picture, video, iframe, figure{
+  max-width: 100%;
+  // width: 100%;
+  display: block;
+  object-fit: cover; /* optional */ 
+  object-position: center center; /* optional */ 
+}
+  
+a {
+  display: inline-block;
+  text-decoration: none;
+  color:inherit;
+  font-size:inherit;
+  line-height: inherit;
+}
+
+// Disable quotation marks on quote tags 
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+  
+// Set forms values to inherit, to create fast changes of themes 
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  color:inherit;
+  display: block;
+  appearance: none;  // optional 
+}
+
+input { display: inline-block; }
+
+// Set tables with single border */
+table, tr, td {
+   border-collapse: collapse;
+  border-spacing: 0;
+}
+  
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+

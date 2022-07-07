@@ -1,0 +1,43 @@
+.explore__header { 
+    display: none;
+}
+
+.products {
+    display: flex;
+    gap: 24px;
+}
+
+.products__left {
+    // width: 50%;
+    // background-image: url(../../images/04-explore/explore-01.png);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: top left;
+    flex: 1;
+}
+
+.products__right {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.show-on-lg { 
+    display: block !important;
+}
+
+.hide-on-lg { 
+    display: none !important;
+}
+
+@media screen and (max-width: 881px) {
+    .show-on-lg { 
+        display: none !important;
+    }
+
+    .hide-on-lg { 
+        display: block !important;
+    }
+
+}

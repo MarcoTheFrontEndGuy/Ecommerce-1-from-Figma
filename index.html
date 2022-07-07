@@ -1,0 +1,846 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website - ecommerce - app - 01-07-2022 -- By Marco Estors</title>
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- icons cdn  -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- swiper.js slider - with touch for mobile  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <!-- ==================================================================================== -->
+
+
+
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__search">
+                <i class='header__search__icon bx bx-search'></i>
+                <form class="header__search__form" action="#">
+                    <input class="header__search__form__input" type="search">
+
+                    <button class="header__search__form__submit" type="submit">
+                        <i class='bx bx-search'></i>
+                    </button>
+                </form>
+            </div>
+           
+
+            <img class="ecommerce-logo" src="images/01-header/Logo-selection.svg" alt="">
+           
+            <div class="user-details ai-center hide-on-mobile">
+                <a class="user-account ai-center">
+                    <i class='bx bx-user'></i>
+                    account
+                </a>
+                <a class="user-cart ai-center">
+                    <i class='bx bx-shopping-bag' ></i>
+                    shopping
+                </a>
+            </div>
+
+ 
+            <!-- mobile menu icon -->
+            <i class='bx bx-menu header-mobile-menu-icon'></i>
+            <!-- mobile menu icon -->
+        </div>
+        <!-- .header__top - end  -->
+
+        <div class="header__bottom">
+            <nav class="header__bottom__nav">
+                <!-- <div class="account-shopping-mobile"> -->
+                <a class="header__bottom__nav__a user-account-mobile">
+                    <i class='bx bx-user'></i>
+                    account
+                </a>
+                <a class="user-cart-mobile">
+                    <i class='bx bx-shopping-bag' ></i>
+                    shopping
+                </a>
+                <!-- </div> -->
+                <a class="header__bottom__nav__a" href="">Jewelry & Accessories</a>
+                <a class="header__bottom__nav__a" href="">Clothing & Shoes</a>
+                <a class="header__bottom__nav__a" href="">Home & Living</a>
+                <a class="header__bottom__nav__a" href="">Wedding & Party</a>
+                <a class="header__bottom__nav__a" href="">Toys & Entertainment</a>
+                <a class="header__bottom__nav__a" href="">Art & Collectibles</a>
+                <a class="header__bottom__nav__a" href="">Craft Supplies & Tools</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <header class="hero__header">
+            <h1 class="hero__header__h1">Collections</h1>
+            <p class="hero__header__p big">
+                You can explore and shop many different collections
+                from various brands here.
+            </p>
+            <!-- <a href="" class="hero__header__btn">
+                <i class='bx bx-shopping-bag' ></i>
+                Shop Now
+            </a> -->
+            <a href="#" class="btn-big big">
+                <i class='bx bx-shopping-bag' ></i>
+                Shop Now
+            </a>
+        </header>
+        <!-- .hero__header - end  -->
+        <figure class="hero__figure">
+            <img src="images/02-hero/hero-image.png" alt="">
+        </figure>
+    </div>
+    <!-- .hero - end  -->
+    <main class="main">
+        <div class="section brands">
+            <img src="images/03-brands/brand-1.png" alt="brand 1 is our sponsor">
+            <img src="images/03-brands/brand-2.png" alt="brand 2 is our partner">
+            <img src="images/03-brands/brand-3.png" alt="brand 3 is our sponsor">
+            <img src="images/03-brands/brand-4.png" alt="brand 4 is belong to us">
+            <img src="images/03-brands/brand-5.png" alt="brand 5 is our sponsor">
+        </div>
+        <!-- .brands - end  -->
+
+        <section class="section explore">
+            <header class="explore__header">
+                <h2 class="explore__header__h2">EXPLORE NEW AND POPULAR STYLES</h2>
+            </header>
+            <div class="products">
+                <div class="products__left show-on-lg">
+                    <div class="product-card ">
+                        <div class="product-card__content">
+                            <figure class="product-card__figure">
+                                <img src="images/04-explore/explore-01.png" alt="">
+                            </figure>
+                            <div class="product-card__description">
+                                <h3 class="product-card__description__title">Jacket <span>103 units</span></h3>
+                            </div>
+                        </div>
+                        <!-- .product-card__content - end  -->
+                    </div>
+                </div>
+                <!-- .products__left - end  -->
+                <div class="products__right">
+                    <div class="product-card hide-on-lg">
+                        <div class="product-card__content ">
+                            <figure class="product-card__figure">
+                                <img src="images/04-explore/explore-01.png" alt="">
+                            </figure>
+                            <div class="product-card__description">
+                                <h3 class="product-card__description__title">Jacket <span>103 units</span></h3>
+                            </div>
+                        </div>
+                        <!-- .product-card__content - end  -->
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__content">
+                            <figure class="product-card__figure">
+                                <img src="images/04-explore/explore-02.png" alt="">
+                            </figure>
+                            <div class="product-card__description">
+                                <h3 class="product-card__description__title">Jacket <span>103 units</span></h3>
+                            </div>
+                        </div>
+                        <!-- .product-card__content - end  -->
+                    </div>
+                    <!-- .explore-prduct-card - end  -->
+                    <div class="product-card">
+                        <div class="product-card__content">
+                            <figure class="product-card__figure">
+                                <img src="images/04-explore/explore-03.png" alt="">
+                            </figure>
+                            <div class="product-card__description">
+                                <h3 class="product-card__description__title">Jacket <span>103 units</span></h3>
+                            </div>
+                        </div>
+                        <!-- .product-card__content - end  -->
+                    </div>
+                    <!-- .explore-prduct - end  -->
+                    <div class="product-card">
+                        <div class="product-card__content">
+                            <figure class="product-card__figure">
+                                <img src="images/04-explore/explore-04.png" alt="">
+                            </figure>
+                            <div class="product-card__description">
+                                <h3 class="product-card__description__title">Jacket <span>103 units</span></h3>
+                            </div>
+                        </div>
+                        <!-- .product-card__content - end  -->
+                    </div>
+                    <!-- .explore-prduct - end  -->
+                    <div class="product-card">
+                        <div class="product-card__content">
+                            <figure class="product-card__figure">
+                                <img src="images/04-explore/explore-05.png" alt="">
+                            </figure>
+                            <div class="product-card__description">
+                                <h3 class="product-card__description__title">Jacket <span>103 units</span></h3>
+                            </div>
+                        </div>
+                        <!-- .product-card__content - end -->
+                    </div>
+                    <!-- .explore-prduct - end  -->
+                </div>
+                <!-- .products__left - end  -->
+            </div>
+            <!-- .products - end  -->
+        </section>
+        <!-- .explore - end  -->
+
+        <section class="section new">
+            <header class="new__header">
+                <h2 class="new__header__h2">New Products</h2>
+                <ul class="products-nav">
+                    <!-- original design  -->
+                    <!-- <li><a href="">All Products</a></li>
+                    <li><a href="">T-Shirts</a></li>
+                    <li><a href="">Hoodies</a></li>
+                    <li><a href="">Jackets</a></li> -->
+
+                    <!-- <li><a class="new-showAllProducts" href="">All Products</a></li>
+                    <li><a class="new-basic-filter-button" href="">Women</a></li>
+                    <li><a class="new-basic-filter-button" href="">Men</a></li>
+                    <li><a class="new-basic-filter-button" href="">Complements</a></li>
+                    -->
+                    <li class="new-showAllProducts" href="">All Products</li>
+                    <li class="new-basic-filter-button" href="">Women</li>
+                    <li class="new-basic-filter-button" href="">Men</li>
+                    <li class="new-basic-filter-button" href="">Complements</li>
+                   
+                    <li>
+                        <a href="">
+                            <i class='bx bx-filter-alt' ></i> 
+                            Filter
+                         </a>
+                    </li>
+                </ul>
+            </header>
+            <div class="new__products">
+                <!-- .product-card  Complements is to filter by class  -->
+                <div class="product-card Complements">
+                    <header class="product-card__header">
+                        <h3 class="product-card__header__h3">Adicolor Classics Joggers</h3>
+                        <p class="product-card__header__p">Dress <span>$63.85</span></p>
+                    </header>
+                    <div class="product-card__content">
+                        <figure class="product-card__figure">
+                            <img src="images/05-new/new-01.png" alt="">
+                        </figure>
+                        <div class="product-card__description">
+                            <h3>Jacket <span>103 units</span></h3>
+                        </div>
+                    </div>
+                    <!-- .product-card__content - end  -->
+                </div>
+                <!-- .product 1 - end  -->
+                
+                <!-- .product-card  Complements is to filter by class  -->
+                <div class="product-card Complements">
+                    <header class="product-card__header">
+                        <h3 class="product-card__header__h3">Nike Sportswear Futura Luxe</h3>
+                        <p class="product-card__header__p">Bag <span>$130.00</span></p>
+                    </header>
+                    <div class="product-card__content">
+                        <figure class="product-card__figure">
+                            <img src="images/05-new/new-02.png" alt="">
+                        </figure>
+                        <div class="product-card__description">
+                            <h3>Jacket <span>103 units</span></h3>
+                        </div>
+                    </div>
+                    <!-- .product-card__content - end  -->
+                </div>
+                <!-- .product 2 - end  -->
+
+                <!-- .product-card  Women is to filter by class  -->
+                <div class="product-card Women">
+                    <header class="product-card__header">
+                        <h3 class="product-card__header__h3">Geometric print Scarf</h3>
+                        <p class="product-card__header__p">Scarf <span>$53.00</span></p>
+                    </header>
+                    <div class="product-card__content">
+                        <figure class="product-card__figure">
+                            <img src="images/05-new/new-03.png" alt="">
+                        </figure>
+                        <div class="product-card__description">
+                            <h3>Jacket <span>103 units</span></h3>
+                        </div>                    
+                    </div>
+                    <!-- .product-card__content - end  -->
+                </div>
+                <!-- .product 3 - end  -->
+                
+                <!-- .product-card  Men is to filter by class  -->
+                <div class="product-card Men">
+                    <header class="product-card__header">
+                        <h3 class="product-card__header__h3">Yellow Reserved Hoodie</h3>
+                        <p class="product-card__header__p">Hoodie  <del>$364.00</del></del><span>$155.00</span></p>
+                    </header>
+                    <div class="product-card__content">
+                        <figure class="product-card__figure">
+                            <img src="images/05-new/new-04.png" alt="">
+                            <span class="product-card-hot black-btn">SALE</span>
+                        </figure>
+                        <div class="product-card__description">
+                            <h3>Jacket <span>103 units</span></h3>
+                        </div>
+                    </div>
+                    <!-- .product-card__content - end  -->
+                </div>
+                <!-- .product 4 - end  -->
+
+                <!-- .product-card  Women is to filter by class  -->
+                <div class="product-card Women">
+                    <header class="product-card__header">
+                        <h3 class="product-card__header__h3">Basic Dress Green </h3>
+                        <p class="product-card__header__p">Dress <span>$236.00</span></p>
+                    </header>
+                    <div class="product-card__content">
+                        <figure class="product-card__figure">
+                            <img src="images/05-new/new-05.png" alt="">
+                            <span class="product-card-hot red-btn">HOT</span>
+                        </figure>
+                        <div class="product-card__description">
+                            <h3>Jacket <span>103 units</span></h3>
+                        </div>
+                    </div>
+                    <!-- .product-card__content - end  -->
+                </div>
+                <!-- .product 5 - end  -->
+                
+                <!-- .product-card  Complements is to filter by class  -->
+                <div class="product-card Complements">
+                    <header class="product-card__header">
+                        <h3 class="product-card__header__h3">Zoom Pegasus</h3>
+                        <p class="product-card__header__p">Shoes <del>$220.00</del> <span>$198.00</span></p>
+                    </header>
+                    <div class="product-card__content">
+                        <figure class="product-card__figure">
+                            <img src="images/05-new/new-06.png" alt="">
+                            <span class="product-card-hot black-btn">SALE</span>
+                        </figure>
+                        <div class="product-card__description">
+                            <h3>Jacket <span>103 units</span></h3>
+                        </div>
+                    </div>
+                    <!-- .product-card__content - end  -->
+                </div>
+                <!-- .product 6 - end  -->
+
+                <!-- .product-card  Men is to filter by class  -->
+                <div class="product-card Men">
+                    <header class="product-card__header">
+                        <h3 class="product-card__header__h3">Repel Miller</h3>
+                        <p class="product-card__header__p">Jacket <span>$120.50</span></p>
+                    </header>
+                    <div class="product-card__content">
+                        <figure class="product-card__figure">
+                            <img src="images/05-new/new-07.png" alt="">
+                        </figure>
+                        <div class="product-card__description">
+                            <h3>Jacket <span>103 units</span></h3>
+                        </div>
+                    </div>
+                    <!-- .product-card__content - end  -->
+
+                </div>
+                <!-- .product 7 - end  -->
+
+                <!-- .product-card  Complements is to filter by class  -->
+                <div class="product-card Complements">
+                    <header class="product-card__header">
+                        <h3 class="product-card__header__h3">Polarised Sunglasses</h3>
+                        <p class="product-card__header__p">Glasses <span>$160.00</span></p>
+                    </header>
+                    <div class="product-card__content">
+                        <figure class="product-card__figure">
+                            <img src="images/05-new/new-08.png" alt="">
+                        </figure>
+                        <div class="product-card__description">
+                            <h3>Jacket <span>103 units</span></h3>
+                        </div>
+                    </div>
+                    <!-- .product-card__content - end  -->
+                </div>
+                <!-- .product 8 - end  -->
+
+                <div class="product-card">
+                    <header class="product-card__header">
+                        <h3 class="product-card__header__h3">Polarised Sunglasses</h3>
+                        <p class="product-card__header__p">Glasses <span>$160.00</span></p>
+                    </header>
+                    <div class="product-card__content">
+                        <figure class="product-card__figure">
+                            <img src="images/05-new/new-09.jpg" alt="">
+                        </figure>
+                        <div class="product-card__description">
+                            <h3>Jacket <span>103 units</span></h3>
+                        </div>
+                    </div>
+                    <!-- .product-card__content - end  -->
+                </div>
+                <!-- .product 9 - end  -->
+                
+            </div>
+            <!-- .new__products - end  -->
+        </section>
+        <!-- .new - end  -->
+
+        <section class="section banner">
+            <header class="banner__header">
+                <img src="images/06-banner/zara-banner-heading-is-an-image.png" alt="">
+                <h2 class="banner__header__h2">
+                    <span style="display:none;">Zara Ecommerce</span>
+                </h2>
+                <p class="banner__p big"> Lustrous yet understated. The new evening
+                    wear collection exclusively offered at the
+                    reopened Giorgio Armani boutique in Los
+                    Angeles.
+                </p>
+                <a href="#" class="btn-big bg-white">See Collection</a>
+            </header>
+        </section>
+        <!-- .banner - end  -->
+    
+        <section class="section bestsellers">
+            <header class="bestsellers__header">
+                <h2 class="bestsellers__header__h2">Best Sellers</h2>
+                <ul class="products-nav">
+                    <li><a href="">All Products</a></li>
+                    <li><a href="">T-Shirts</a></li>
+                    <li><a href="">Hoodies</a></li>
+                    <li><a href="">Jackets</a></li>
+                    <li><a href="">Show all</a></li>
+                </ul>
+            </header>
+        
+            <div class="bestsellers__products">
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <header class="product-card__header">
+                                    <h3 class="product-card__header__h3">Adicolor Classics Joggers</h3>
+                                    <p class="product-card__header__p">Dress <span>$63.85</span></p>
+                                </header>
+                                <div class="product-card__content">
+                                    <figure class="product-card__figure">
+                                        <img src="images/05-new/new-01.png" alt="">
+                                    </figure>
+                                    <!-- <div class="product-card__description">
+                                        <h3>Jacket <span>103 units</span></h3>
+                                    </div> -->
+                                </div>
+                                <!-- .product-card__content - end  -->
+                            </div>
+                            <!-- .product 1 - end  -->
+                        </div>
+                        <!-- .swiper-slide 1 - end  -->
+
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <header class="product-card__header">
+                                    <h3 class="product-card__header__h3">Nike Sportswear Futura Luxe</h3>
+                                    <p class="product-card__header__p">Bag <span>$130.00</span></p>
+                                </header>
+                                <div class="product-card__content">
+                                    <figure class="product-card__figure">
+                                        <img src="images/05-new/new-02.png" alt="">
+                                    </figure>
+                                    <!-- <div class="product-card__description">
+                                        <h3>Jacket <span>103 units</span></h3>
+                                    </div> -->
+                                </div>
+                                <!-- .product-card__content - end  -->
+                            </div>
+                            <!-- .product 2 - end  -->
+                        </div>
+                        <!-- .swiper-slide 2 - end  -->
+
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <header class="product-card__header">
+                                    <h3 class="product-card__header__h3">Geometric print Scarf</h3>
+                                    <p class="product-card__header__p">Scarf <span>$53.00</span></p>
+                                </header>
+                                <div class="product-card__content">
+                                    <figure class="product-card__figure">
+                                        <img src="images/05-new/new-03.png" alt="">
+                                    </figure>
+                                    <!-- <div class="product-card__description">
+                                        <h3>Jacket <span>103 units</span></h3>
+                                    </div> -->
+                                </div>
+                                <!-- .product-card__content - end  -->
+                            </div>
+                            <!-- .product 3 - end  -->
+                        </div>
+                        <!-- .swiper-slide 3 - end  -->
+
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <header class="product-card__header">
+                                    <h3 class="product-card__header__h3">Yellow Reserved Hoodie</h3>
+                                    <p class="product-card__header__p">Hoodie  <del>$364.00</del></del><span>$155.00</span></p>
+                                </header>
+                                <div class="product-card__content">
+                                    <figure class="product-card__figure">
+                                        <img src="images/05-new/new-04.png" alt="">
+                                        <span class="product-card-hot black-btn">SALE</span>
+                                    </figure>
+                                    <!-- <div class="product-card__description">
+                                        <h3>Jacket <span>103 units</span></h3>
+                                    </div> -->
+                                </div>
+                                <!-- .product-card__content - end  -->
+                            </div>
+                            <!-- .product 4 - end  -->
+                        </div>
+                        <!-- .swiper-slide 4 - end  -->
+
+
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <header class="product-card__header">
+                                    <h3 class="product-card__header__h3">Basic Dress Green </h3>
+                                    <p class="product-card__header__p">Dress <span>$236.00</span></p>
+                                </header>
+                                <div class="product-card__content">
+                                    <figure class="product-card__figure">
+                                        <img src="images/05-new/new-05.png" alt="">
+                                        <span class="product-card-hot red-btn">HOT</span>
+                                    </figure>
+                                    <!-- <div class="product-card__description">
+                                        <h3>Jacket <span>103 units</span></h3>
+                                    </div> -->
+                                </div>   
+                                <!-- .product-card__content - end                  -->
+                            </div>
+                            <!-- .product 5 - end  -->
+                        </div>
+                        <!-- .swiper-slide 5 - end  -->
+
+
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <header class="product-card__header">
+                                    <h3 class="product-card__header__h3">Zoom Pegasus</h3>
+                                    <p class="product-card__header__p">Shoes <del>$220.00</del> <span>$198.00</span></p>
+                                </header>
+                                <div class="product-card__content">
+                                    <figure class="product-card__figure">
+                                        <img src="images/05-new/new-06.png" alt="">
+                                        <span class="product-card-hot black-btn">SALE</span>
+                                    </figure>
+                                    <!-- <div class="product-card__description">
+                                        <h3>Jacket <span>103 units</span></h3>
+                                    </div> -->
+                                </div>
+                                <!-- .product-card__content - end  -->
+
+                            </div>
+                            <!-- .product 6 - end  -->
+                        </div>
+                        <!-- .swiper-slide 6 - end  -->
+
+
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <header class="product-card__header">
+                                    <h3 class="product-card__header__h3">Repel Miller</h3>
+                                    <p class="product-card__header__p">Jacket <span>$120.50</span></p>
+                                </header>
+                                <div class="product-card__content">
+                                    <figure class="product-card__figure">
+                                        <img src="images/05-new/new-07.png" alt="">
+                                    </figure>
+                                    <!-- <div class="product-card__description">
+                                        <h3>Jacket <span>103 units</span></h3>
+                                    </div> -->
+                                </div>
+                                <!-- .product-card__content - end  -->
+                            </div>
+                            <!-- .product 7 - end  -->
+                        </div>
+                        <!-- .swiper-slide 7 - end  -->
+
+
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <header class="product-card__header">
+                                    <h3 class="product-card__header__h3">Polarised Sunglasses</h3>
+                                    <p class="product-card__header__p">Glasses <span>$160.00</span></p>
+                                </header>
+                                <div class="product-card__content">
+                                    <figure class="product-card__figure">
+                                        <img src="images/05-new/new-08.png" alt="">
+                                    </figure>
+                                    <!-- <div class="product-card__description">
+                                        <h3>Jacket <span>103 units</span></h3>
+                                    </div> -->
+                                </div>
+                                <!-- .product-card__content - end  -->
+                            </div>
+                            <!-- .product 8 - end  -->
+                        </div>
+                        <!-- .swiper-slide - 8 - end  -->
+
+
+                    </div>
+                    <!-- .swiper-wrapper - end  -->
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                </div>
+                <!-- .swiper - end  -->
+            </div>
+            <!-- .bestsellers__products - end  -->
+
+        </section>
+        <!-- .bestsellers - end  -->
+      
+        <section class="section follow">
+          <header class="follow__header">
+            <h2 class="follow__header__h2">Follow products and discounts on Instagram</h2>
+          </header> 
+          <div class="follow__instagram-products">
+            <a class="instagram-product">
+                <figure>
+                    <img src="images/08-follow/image-product-1.png" alt="">
+                </figure>
+                <span class="instagram-product--hover">
+                    <i class='bx bxl-instagram'></i>
+                </span>
+            </a>
+            <!-- .instagram-product 1 - end  -->
+            <a class="instagram-product">
+                <figure>
+                    <img src="images/08-follow/image-product-2.png" alt="">
+                </figure>
+                <span class="instagram-product--hover">
+                    <i class='bx bxl-instagram'></i>
+                </span>
+            </a>
+            <!-- .instagram-product 2 - end  -->
+            <a class="instagram-product">
+                <figure>
+                    <img src="images/08-follow/image-product-3.png" alt="">
+                </figure>
+                <span class="instagram-product--hover">
+                    <i class='bx bxl-instagram'></i>
+                </span>
+            </a>
+            <!-- .instagram-product 3 - end  -->
+            <a class="instagram-product">
+                <figure>
+                    <img src="images/08-follow/image-product-4.png" alt="">
+                </figure>
+                <span class="instagram-product--hover">
+                    <i class='bx bxl-instagram'></i>
+                </span>
+            </a>
+            <!-- .instagram-product 4 - end  -->
+            <a class="instagram-product">
+                <figure>
+                    <img src="images/08-follow/image-product-5.png" alt="">
+                </figure>
+                <span class="instagram-product--hover">
+                    <i class='bx bxl-instagram'></i>
+                </span>
+            </a>
+            <!-- .instagram-product 5 - end  -->
+            <a class="instagram-product">
+                <figure>
+                    <img src="images/08-follow/image-product-6.png" alt="">
+                </figure>
+                <span class="instagram-product--hover">
+                    <i class='bx bxl-instagram'></i>
+                </span>
+            </a>
+            <!-- .instagram-product 6 - end  -->
+        
+          </div> 
+        </section>
+        <!-- .follow - end  -->
+        <section class="section subscribe">
+            <header class="subscribe__header">
+                <h2 class="subscribe__header__h2">Or subscribe to the newsletter</h2>
+            </header>
+            <form action="#">
+                <input id="subscribe-user" type="text" placeholder="email address">
+                <input type="submit" value="SUBMIT">
+            </form>
+        </section>
+        <!-- .subscribe - end  -->
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__company">
+                <img class="footer__company__logo" src="images/01-header/Logo-selection.svg" alt="">
+                <p class="footer__company__p">Lorem ipsum money  sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    money e magna aliqua
+                </p>
+                <div class="footer__social">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-linkedin' ></i>
+                    <i class='bx bxl-dribbble' ></i>
+                </div>
+            </div>
+            <!-- .footer__company - end  -->
+            <div class="footer__columns">
+                <div class="footer__col">
+                    <h4>CATALOG</h4>
+                    <ul class="footer__col__ul">
+                        <li><a href="">Necklaces</a></li>
+                        <li><a href="">Hoodies</a></li>
+                        <li><a href="">Jewelry Box</a></li>
+                        <li><a href="">T-Shirts</a></li>
+                        <li><a href="">Jackets</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>ABOUT US</h4>
+                    <ul class="footer__col__ul">
+                        <li><a href="">Our Producers</a></li>
+                        <li><a href="">Sitemap</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>CUSTOMER SERVICES</h4>
+                    <ul class="footer__col__ul">
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Track Your Order</a></li>
+                        <li><a href="">Product Care & Repair</a></li>
+                        <li><a href="">Book An Appoinment</a></li>
+                        <li><a href="">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- .footer__top - end  -->
+
+
+        <div class="footer__copyright">
+            &copy;2022 Coral Ecommerce. Inc
+
+            <span>
+                Scroll to top 
+                <i class='bx bx-up-arrow-alt' ></i>
+            </span>
+
+        </div>
+            
+    </footer>
+
+
+    <!-- custom js  -->
+    <script>
+        // Show / hide mobile menu 
+        // const mobileMenuIcon = document.querySelector(".header-mobile-menu-icon");
+        // const mobileMenu = document.querySelector(".header__bottom__nav");
+        // const hero = document.querySelector(".hero");
+
+        // function showHideMobileMenu() {
+        //     mobileMenu.classList.toggle("showMobileMenu");
+        //     headerSearchForm.classList.remove("show-header__search__form");
+        // }
+
+        // mobileMenuIcon.addEventListener("click", showHideMobileMenu);
+
+
+        // Show / hide header search bar 
+        // const headerSearchIcon = document.querySelector(".header__search__icon");
+        // const headerSearchForm = document.querySelector(".header__search__form");
+
+        // function showHeaderSearch() {
+        //     headerSearchForm.classList.toggle("show-header__search__form");
+        //     mobileMenu.classList.remove("showMobileMenu");
+        // }
+
+        // headerSearchIcon.addEventListener("click", showHeaderSearch);
+    
+
+        // hide mobile menu and header search bar --> on scroll and on click hero section
+        // function hideMobileMenu_hideHeaderSearchBar() {
+        //     headerSearchForm.classList.remove("show-header__search__form");
+        //     mobileMenu.classList.remove("showMobileMenu");
+        // }
+
+        // hero.addEventListener("click", hideMobileMenu_hideHeaderSearchBar);
+        // window.addEventListener("scroll", hideMobileMenu_hideHeaderSearchBar);
+   
+   </script>
+
+   <script src="js/01-header.js"></script>
+   <script src="js/02-filter-by-title.js"></script>
+
+   <!-- swiper js - slider cdn  -->
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/03-swiper-slider-touch.js"></script>
+   <!-- <script>
+        const swiper = new Swiper('.swiper', {
+        // Default parameters
+        slidesPerView: 4,
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+            slidesPerView: 3,
+            spaceBetween: 30
+            },
+            // when window width is >= 640px
+            640: {
+            slidesPerView: 4,
+            spaceBetween: 40
+            }
+        },
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        //   Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        })
+    </script> -->
+
+
+</body>
+
+
+</html>

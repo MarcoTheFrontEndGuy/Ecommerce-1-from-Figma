@@ -1,0 +1,61 @@
+@use '../01-utils/variables';
+
+h1 { font-size: calc(26px + (74 - 26) * (100vw - 400px) / (1200 - 400)); }
+h2 { font-size: calc(22px + (45 - 22) * (100vw - 400px) / (1200 - 400)); }
+// h3 { font-size: calc(26px + (74 - 26) * (100vw - 400px) / (1200 - 400)); }
+// .big { font-size: calc(18px + (30 - 18) * (100vw - 400px) / (1200 - 400)); }
+h4 { font-size: 16px; } //footer list title
+.big { font-size: calc(18px + (30 - 18) * (100vw - 400px) / (1800 - 400)); }
+
+@media screen and (min-width: 1201px) {
+    h1 { font-size: 74px; }
+    h2 { font-size: 45px; }
+    // h3 { font-size: 74px; }
+    // .big { font-size: 30px; }
+}
+
+@media screen and (max-width: 400px) {
+    h1 { font-size: 26px; }
+    h2 { font-size: 22px; }
+    // h3 { font-size: 26px; }
+    .big { font-size: 18px; }
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+    font-family: var(--heading-font);
+}
+
+.header__top {
+    font-size: 14px;
+    color: var(--black);
+} 
+
+
+// hero 
+// h1 {
+//     margin-bottom: 52px;
+// }
+
+.hero__header__p {
+    width: 83%;
+    line-height: 1.5;
+    margin-top: clamp(20px, 2vw, 52px);
+    margin-bottom: clamp(20px, 2vw, 66px);
+}
+
+
+//footer 
+
+h4 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+}
+
+.footer ul li a { 
+    font-size: 14px;
+    font-family: var(-text-type-font);
+}

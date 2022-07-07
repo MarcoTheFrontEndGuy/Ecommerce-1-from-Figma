@@ -1,0 +1,68 @@
+@use '../01-utils/variables';
+@use '../01-utils/mixins';
+
+.header { 
+    background-color: var(--secondary-bg); 
+    padding-top: clamp(20px,  1.62vw, 31px);        // design    1920px - 31px     mobile - 20px
+    position: relative;
+}
+
+.header__top { 
+    @include mixins.ai-center;
+    border-bottom: 1px solid #E3E3E3;
+    z-index: 10;
+    position: relative;
+}
+
+.header__search__icon {
+    cursor: pointer;
+}
+
+.ecommerce-logo { 
+    width: 180px;
+    margin-left: 41.5%;
+}
+
+.user-details { 
+    margin-left: auto;
+    @include mixins.ai-center;
+}
+
+.user-account { 
+    @include mixins.ai-center;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.user-cart {  
+    @include mixins.ai-center;
+    cursor: pointer;
+}
+
+.user-details i,
+.user-cart i {
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 881px) {
+    .header__top {
+        display: flex;
+    }
+
+    .header__search {
+        order: 1;
+        margin-left: auto;
+    }
+
+    .ecommerce-logo {
+        order: 0;
+        margin-left: inherit;
+    }
+
+    .user-details {
+        display: none;
+    }
+
+
+
+}

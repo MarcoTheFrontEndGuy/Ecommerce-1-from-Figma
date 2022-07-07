@@ -1,0 +1,33 @@
+// 140px 35px
+
+.new {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    // background: orange;
+}
+
+.new__header {
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+
+
+ul.products-nav {
+    display: flex;
+    gap: 40px;
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+ul.products-nav > li:last-child {
+    margin-left: auto;
+    background: black;
+    padding: 5px;
+    color: white;
+}
+
+// filter elements on click adding this class
+.hideProductFromSearch {
+    display: none !important;
+}

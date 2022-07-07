@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        body {
+            box-sizing: border-box;
+        }
+   
+        .gallery {
+            display: grid;
+            /* grid-template-columns: repeat(4, 1fr); */
+            grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+            gap: 20px;
+            background-color: darkblue;
+            padding: 30px; 
+            transition: all .5s;
+        }
+
+        .gallery > div {
+            height: 150px;
+            display: grid;
+            place-items: center;
+            background-color: #ccc;
+        }
+
+        ul {
+            margin-left: 200px;
+            display: flex;
+            gap: 40px;
+            padding: 20px;
+        }
+                          
+        .hideProductFromSearch {
+            display: none !important;
+        }
+
+    </style>
+</head>
+<body>
+    <header>hello world </header>
+
+    <h1>hello world</h1>
+    <ul class="ul-filter-buttons">
+        <li class="showAllProducts">All</li>
+        <li class="filter-button jacketButton">jackets</li>
+        <li class="filter-button skirtButton">skirts</li>
+        <li class="filter-button tshirtButton">t-shirts</li>
+    </ul>
+    <div class="gallery">
+        <div class="t-shirts">
+            <h3>t-shirt 1</h3>
+        </div>
+        <div class="jackets">
+            <h3>jacket 1</h3>
+        </div>
+        <div class="skirts">
+            <h3>skirt 1</h3>
+        </div>
+        <div class="t-shirts">
+            <h3>t-shirt 2</h3>
+        </div>
+        <div class="t-shirts">
+            <h3>t-shirt 3 </h3>
+        </div>
+        <div class="jackets">
+            <h3>jacket 2</h3>
+        </div>
+      
+       
+      
+    </div>
+
+    <script>
+
+        const allProducts = document.querySelectorAll(".gallery > div");
+
+        const showAllProducts = document.querySelector(".showAllProducts");
+        const allFilterButtons = document.querySelectorAll(".filter-button");
+
+
+        function filterByClass(e) {
+            allProducts.forEach((eachone) => {
+                eachone.classList.remove("hideProductFromSearch");
+                if(eachone.classList.contains(e.target.innerHTML) !== true) {
+                    eachone.classList.add("hideProductFromSearch");
+                } 
+            })
+        }
+
+        allFilterButtons.forEach((eachone) => {
+            eachone.addEventListener("click", filterByClass);
+        });
+
+        showAllProducts.addEventListener("click", () => {
+            allProducts.forEach((eachone) => {
+                eachone.classList.remove("hideProductFromSearch");
+            });
+        });
+
+    </script>
+</body>
+</html>

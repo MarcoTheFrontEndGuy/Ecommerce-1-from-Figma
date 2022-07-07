@@ -1,0 +1,23 @@
+// 223 x 72
+
+// 1920px     223px width   72px height
+
+
+.btn-big {
+    line-height: 1.5;
+    background-color: var(--grey-dark);
+    color: var(--white);
+    padding: 9px 26px;
+    font-weight: 400;
+    font-size: calc(18px + (30 - 18) * (100vw - 400px) / (1800 - 400)); 
+}
+
+.btn-big > i {
+    margin-right: 8px;
+    font-size: inherit;
+}
+
+.bg-white {
+    background-color: var(--white);
+    color: var(--black);
+}

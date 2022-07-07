@@ -1,0 +1,35 @@
+.banner {
+    width: 100vw;
+    min-height: 40.42vw;
+    background-image: url(../../images/06-banner/banner-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    // padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.banner__header {
+    width: 43.5%;
+    margin-left: auto;
+    position: relative;
+}
+
+.banner__header > img {
+    width: 40%;
+    height: auto;
+}
+
+.banner__p {
+    margin-top: clamp(15px, 1vw, 55px);
+    margin-bottom: clamp(20px, 1vw, 66px);
+    line-height: 160%;
+    font-family: var(--heading-font);
+    font-weight: 400;
+}
+

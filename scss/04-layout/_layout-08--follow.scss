@@ -1,0 +1,55 @@
+.follow {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: var(--grey-light);
+    text-align: center;
+}
+
+.follow__header { 
+    padding-bottom: 60px;
+}
+
+.follow__instagram-products {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+
+ }
+
+.instagram-product {
+    position: relative;
+ }
+
+ @media screen and (max-width: 640px) {
+    .follow__instagram-products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+ }
+
+
+.instagram-product--hover { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    z-index: 100;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// position: absolute;
+// top: 0;
+// left: 0;
+// width: 100%;
+// height: 100%;
+
+
+.follow .bxl-instagram {
+    font-size: 42px;
+    color: var(--white);
+ }
