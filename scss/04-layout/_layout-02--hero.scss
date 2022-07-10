@@ -4,20 +4,43 @@
     background-color: var(--secondary-bg);
     font-family: var(--heading-font);
     display: flex;
-    padding-top: 81px;
-    padding-bottom: 60px;
-    line-height: 1.5
+    padding-top: 5.0625rem;
+    padding-bottom: 3.75rem;
+    line-height: 1.5;
 }
 
 // this is hero left 
 .hero__header {
     width: 58.1%;
-    padding-top: clamp(30px, 5vw, 155px);
-    padding-bottom: clamp(34px, 5vw, 184px); 
-    // background: skyblue;
+    padding-top: clamp(1.875rem, 5vw, 9.6875rem);
+    padding-bottom: clamp(2.125rem, 5vw, 11.5rem); 
 }
 
 // this is hero right 
 .hero__figure {
     width: 41.9%
 }
+
+
+
+@media screen and (max-width: 55.0625rem) {
+    .hero {
+        padding-top: clamp(0.125rem, 1vw, 5.0625rem);
+        padding-bottom: clamp(0.125rem, 1vw, 3.75rem);
+    }
+
+    .hero__header__p {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 37.5rem) {
+    .hero__figure {
+        height: auto;
+    }
+
+    .hero__figure img {
+        height: 100%;
+    }
+}
+

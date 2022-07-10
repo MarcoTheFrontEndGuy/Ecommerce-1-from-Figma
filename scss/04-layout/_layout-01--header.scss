@@ -3,13 +3,14 @@
 
 .header { 
     background-color: var(--secondary-bg); 
-    padding-top: clamp(20px,  1.62vw, 31px);        // design    1920px - 31px     mobile - 20px
+    padding-top: clamp(1.25rem, 1.62vw, 1.9375rem);        // design    1920px - 31px     mobile - 20px
     position: relative;
+    font-family: var(--secondary-font);
 }
 
 .header__top { 
     @include mixins.ai-center;
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 0.0625rem solid #E3E3E3;
     z-index: 10;
     position: relative;
 }
@@ -19,7 +20,7 @@
 }
 
 .ecommerce-logo { 
-    width: 180px;
+    width: 11.25rem;
     margin-left: 41.5%;
 }
 
@@ -30,7 +31,7 @@
 
 .user-account { 
     @include mixins.ai-center;
-    margin-right: 24px;
+    margin-right: 1.5rem;
     cursor: pointer;
 }
 
@@ -41,10 +42,10 @@
 
 .user-details i,
 .user-cart i {
-    margin-right: 8px;
+    margin-right: 0.5rem;
 }
 
-@media screen and (max-width: 881px) {
+@media screen and (max-width: 55.0625rem) {
     .header__top {
         display: flex;
     }
@@ -62,7 +63,5 @@
     .user-details {
         display: none;
     }
-
-
 
 }

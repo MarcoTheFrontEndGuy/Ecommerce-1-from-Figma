@@ -1,10 +1,16 @@
 .bestsellers {
-    padding-top: 140px;
-    padding-bottom: 140px;
-    // background: orange;
+    padding-top: 8.75rem;
+    padding-bottom: 8.75rem;  
 }
 
 .bestsellers__header {
-    padding-bottom: 35px;
+    padding-bottom: 2.1875rem;
     text-align: center;
+}
+
+@media screen and (max-width: 75rem) {
+    .bestsellers {
+        padding-top: clamp(1.875rem, 12vw, 8.75rem);
+        padding-bottom: clamp(1.875rem, 12vw, 8.75rem);
+    }
 }

@@ -1,13 +1,6 @@
-// 140px 35px
-
-.new {
-    padding-top: 140px;
-    padding-bottom: 140px;
-    // background: orange;
-}
 
 .new__header {
-    padding-bottom: 35px;
+    padding-bottom: 2.1875rem;
     text-align: center;
 }
 
@@ -15,19 +8,54 @@
 
 ul.products-nav {
     display: flex;
-    gap: 40px;
-    padding-top: 45px;
-    padding-bottom: 35px;
+    gap: 4%;
+    padding-top: 2.8125rem;
+    padding-bottom: 2.1875rem;
+    font-family: var(--secondary-font);
+    align-items: center;
 }
 
+ul.products-nav > li {
+    cursor: pointer;
+}
 ul.products-nav > li:last-child {
     margin-left: auto;
     background: black;
-    padding: 5px;
+    padding: 0.3125rem;
     color: white;
 }
 
 // filter elements on click adding this class
 .hideProductFromSearch {
     display: none !important;
+}
+
+
+@media screen and (max-width: 85.375rem) {
+    ul.products-nav {
+        gap: 4%;
+    }
+}
+
+@media screen and (max-width: 31.25rem) {
+    ul.products-nav {
+        /* display: flex; */
+        gap: 4%;
+        padding-top: 0.9375rem;
+        padding-bottom: 0.9375rem;
+        font-family: var(--secondary-font);
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    ul.products-nav > li {
+        background-color: #1e2832;
+        color: white;
+        padding: 0.25rem;
+    }
+
+    .advanced-filter-button {
+        display: none;
+    }
 }

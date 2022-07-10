@@ -9,11 +9,14 @@
     color: var(--white);
     padding: 9px 26px;
     font-weight: 400;
-    font-size: calc(18px + (30 - 18) * (100vw - 400px) / (1800 - 400)); 
+    // font-size: calc(18px + (30 - 18) * (100vw - 400px) / (1800 - 400)); 
+    font-size: calc(1.125rem + (1.875 - 1.125) * (100vw - 25rem) / (112.5 - 25)); 
+
+
 }
 
 .btn-big > i {
-    margin-right: 8px;
+    margin-right: 0.5rem;
     font-size: inherit;
 }
 

@@ -1,24 +1,29 @@
 @use '../01-utils/variables';
+                     px       px  px                px      px     px
+// h1 { font-size: calc(26px + (74 - 26) * (100vw - 400px) / (1200 - 400)); }
+// h2 { font-size: calc(22px + (45 - 22) * (100vw - 400px) / (1200 - 400)); }
+// h4 { font-size: 16px; } //footer list title
+// .big { font-size: calc(18px + (30 - 18) * (100vw - 400px) / (1800 - 400)); }
 
-h1 { font-size: calc(26px + (74 - 26) * (100vw - 400px) / (1200 - 400)); }
-h2 { font-size: calc(22px + (45 - 22) * (100vw - 400px) / (1200 - 400)); }
-// h3 { font-size: calc(26px + (74 - 26) * (100vw - 400px) / (1200 - 400)); }
-// .big { font-size: calc(18px + (30 - 18) * (100vw - 400px) / (1200 - 400)); }
-h4 { font-size: 16px; } //footer list title
-.big { font-size: calc(18px + (30 - 18) * (100vw - 400px) / (1800 - 400)); }
+h1 { font-size: calc(1.625rem + (4.625 - 1.625) * (100vw - 25rem) / (75 - 25)); }
+h2 { font-size: calc(1.375rem + (2.8125 - 1.375) * (100vw - 25rem) / (75 - 25)); }
+h4 { font-size: 1rem; } //footer list title
 
-@media screen and (min-width: 1201px) {
-    h1 { font-size: 74px; }
-    h2 { font-size: 45px; }
-    // h3 { font-size: 74px; }
-    // .big { font-size: 30px; }
+.big { font-size: calc(1.125rem + (1.875 - 1.125) * (100vw - 25rem) / (112.5 - 25)); }
+
+
+
+
+
+@media screen and (min-width: 75.0625rem) {
+    h1 { font-size: 4.625rem; }
+    h2 { font-size: 2.8125rem; } 
 }
 
-@media screen and (max-width: 400px) {
-    h1 { font-size: 26px; }
-    h2 { font-size: 22px; }
-    // h3 { font-size: 26px; }
-    .big { font-size: 18px; }
+@media screen and (max-width: 25rem) {
+    h1 { font-size: 1.625rem; }
+    h2 { font-size: 1.375rem; }
+    .big { font-size: 1.125rem; }
 }
 
 h1, 
@@ -30,32 +35,50 @@ h5 {
 }
 
 .header__top {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--black);
 } 
-
-
-// hero 
-// h1 {
-//     margin-bottom: 52px;
-// }
 
 .hero__header__p {
     width: 83%;
     line-height: 1.5;
-    margin-top: clamp(20px, 2vw, 52px);
-    margin-bottom: clamp(20px, 2vw, 66px);
+    margin-top: clamp(1.25rem, 2vw, 3.25rem);
+    margin-bottom: clamp(1.25rem, 2vw, 4.125rem);
 }
 
 
 //footer 
-
 h4 {
     font-family: var(--heading-font);
     font-weight: 500;
 }
 
 .footer ul li a { 
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: var(-text-type-font);
+}
+
+@media screen and (max-width: 62.5rem) {
+    .hero__header__p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 34.375rem) {
+    .hero__header__p {
+        margin-top: clamp(0.125rem, 2vw, 3.25rem);
+        margin-bottom: clamp(0.125rem, 2vw, 4.125rem);
+    }
+}
+
+@media screen and (max-width: 25rem) {
+    h3, h4 {
+        font-size: 0.875rem;
+    }
+    
+    .footer h3, h4 {
+        // font-size: 0.875rem;
+        background-color: var(--grey-light);
+        padding: 5px;
+    }
 }
