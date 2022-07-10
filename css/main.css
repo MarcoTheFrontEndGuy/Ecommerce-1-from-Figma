@@ -157,25 +157,30 @@ body * {
   z-index: -1;
 }
 
-px px px px px px h1 {
-  font-size: calc(1.625rem + 3 * (100vw - 25rem) / 50);
+h1 {
+  font-size: calc(26px + 48 * (100vw - 400px) / 800);
 }
 
 h2 {
-  font-size: calc(1.375rem + 1.4375 * (100vw - 25rem) / 50);
+  font-size: calc(22px + 23 * (100vw - 400px) / 800);
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .big {
-  font-size: calc(1.125rem + 0.75 * (100vw - 25rem) / 87.5);
+  font-size: calc(18px + 12 * (100vw - 400px) / 1400);
 }
 
-@media screen and (min-width: 75.0625rem) {
+@media screen and (min-width: 120rem) {
   h1 {
-    font-size: 4.625rem;
+    font-size: 74px;
+  }
+}
+@media screen and (max-width: 75.0625rem) {
+  h1 {
+    font-size: calc(26px + 48 * (100vw - 400px) / 800);
   }
   h2 {
     font-size: 2.8125rem;
@@ -184,6 +189,7 @@ h4 {
 @media screen and (max-width: 25rem) {
   h1 {
     font-size: 1.625rem;
+    color: green;
   }
   h2 {
     font-size: 1.375rem;
@@ -610,6 +616,7 @@ ul.products-nav > li:last-child {
   background-color: var(--secondary-bg);
   font-family: var(--heading-font);
   display: flex;
+  align-items: center;
   padding-top: 5.0625rem;
   padding-bottom: 3.75rem;
   line-height: 1.5;
