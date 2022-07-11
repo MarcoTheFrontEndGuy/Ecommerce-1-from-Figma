@@ -1,46 +1,55 @@
-@use '../01-utils/mixins';
-
-.hero { 
+.hero {
+    display: flex;
+    padding-top: 81px;
+    padding-bottom: 60px;
     background-color: var(--secondary-bg);
     font-family: var(--heading-font);
-    display: flex;
-    align-items: center;
-    padding-top: 5.0625rem;
-    padding-bottom: 3.75rem;
-    line-height: 1.5;
 }
 
-// this is hero left 
-.hero__header {
-    width: 58.1%;
-    padding-top: clamp(1.875rem, 5vw, 9.6875rem);
-    padding-bottom: clamp(2.125rem, 5vw, 11.5rem); 
+.hero__left {
+    width: 58.33%;
+    padding-top: calc(20px + (85 - 20) * (100vw - 400px) / (1366 - 400));
+    padding-bottom: calc(20px + (124 - 20) * (100vw - 400px) / (1366 - 400));
 }
 
-// this is hero right 
-.hero__figure {
-    width: 41.9%
+.hero__right {
+    width: 41.7%;
+    object-fit: cover;
+    padding-right: 8.3%;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
 
-
-@media screen and (max-width: 55.0625rem) {
+@media screen and (min-width: 1920px) {
     .hero {
-        padding-top: clamp(0.125rem, 1vw, 5.0625rem);
-        padding-bottom: clamp(0.125rem, 1vw, 3.75rem);
+        padding-top: 81px;
+        padding-bottom: 60px;
     }
 
-    .hero__header__p {
-        width: 88%;
+    .hero__left {
+        padding-top: 74px;
+        padding-bottom: 124px;
+    }
+    
+}
+
+@media screen and (max-width: 1366px) {
+    .hero {
+        padding-top: clamp(20px, 6vw, 81px);
+        padding-bottom: clamp(20px, 6vw, 60px);
     }
 }
 
-@media screen and (max-width: 37.5rem) {
-    .hero__figure {
-        height: auto;
+@media screen and (max-width: 881px) {
+    .hero__right {
+        padding-right: 0;
     }
 
-    .hero__figure img {
+    .hero__right img {
         height: 100%;
     }
 }

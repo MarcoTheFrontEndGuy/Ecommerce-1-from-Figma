@@ -25,7 +25,15 @@
     display: none;
 }
 
-@media screen and (max-width: 55.0625rem) {
+@media screen and (max-width: 55.0625rem) {    
+    
+    .header__bottom { 
+        padding-top: 1.875rem;
+        padding-top: 0;
+        position: relative;
+        transition: all .4s;
+    }
+
     .header__bottom__nav {
         position: absolute;
         top: 0rem;
@@ -41,27 +49,13 @@
         z-index: 1000;
     }
 
-    .header__bottom__nav {
-        flex-direction: column;
-        justify-content: flex-start;
-        transition: all, 0.5s;
-    }
-
-    .header__bottom__nav a {
-        padding: 1.25rem;
-        padding: 4vh;
-    }
-
-    // ============================
-    // ============================
     .header__bottom__nav a {
         padding: 1.25rem;
         padding: 4vh;
         padding: clamp(0.625rem, 2vw, 1.125rem);
         text-align: right;
     }
-    // ============================
-    // ============================
+
     .header__bottom__nav a:hover {
         background-color: var(--grey-super-light);
     }

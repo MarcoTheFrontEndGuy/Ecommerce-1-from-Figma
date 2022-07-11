@@ -92,6 +92,10 @@
 
 
 @media screen and (max-width: 25rem) {
+    .footer__company {
+        width: 90%;
+    }
+    
     .footer__columns {
         flex-direction: column;
     }

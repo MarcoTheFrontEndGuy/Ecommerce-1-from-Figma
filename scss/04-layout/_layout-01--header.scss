@@ -45,6 +45,12 @@
     margin-right: 0.5rem;
 }
 
+@media screen and (max-width: 1366px) {
+    .header__bottom {
+        padding-top: 15px;
+    }
+}
+
 @media screen and (max-width: 55.0625rem) {
     .header__top {
         display: flex;

@@ -1,18 +1,17 @@
-// 223 x 72
-
-// 1920px     223px width   72px height
-
 
 .btn-big {
-    line-height: 1.5;
+    line-height: 160%;
     background-color: var(--grey-dark);
     color: var(--white);
-    padding: 9px 26px;
     font-weight: 400;
-    // font-size: calc(18px + (30 - 18) * (100vw - 400px) / (1800 - 400)); 
-    font-size: calc(1.125rem + (1.875 - 1.125) * (100vw - 25rem) / (112.5 - 25)); 
+    padding-top: clamp(5px, .5vw, 21px);
+    padding-bottom: clamp(5px, .5vw, 21px);
+    padding-left: clamp(10px, 1vw, 26px);
+    padding-right: clamp(10px, 1vw, 26px);
+}
 
-
+.btn-big {
+    font-size: calc(16px + (30 - 16) * ((100vw - 400px) / (1919 - 400)));
 }
 
 .btn-big > i {
@@ -24,3 +23,25 @@
     background-color: var(--white);
     color: var(--black);
 }
+
+
+@media screen and (min-width: 1920px) {
+    .btn-big {
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 22px 26px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .btn-big {
+        padding: 10px 14px;
+        background: purple;
+    }
+}
+
+
+// ============================== 
+// ============================== 
+// ============================== 
