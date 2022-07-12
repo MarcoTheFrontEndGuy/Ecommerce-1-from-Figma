@@ -740,7 +740,7 @@ img {
 }
 .banner {
   min-height: 40.42vw;
-  background-image: url(../../images/06-banner/banner-background.png);
+  background-image: url(../images/06-banner/banner-background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -782,7 +782,6 @@ img {
   .banner {
     background-position: top;
     background-size: cover;
-    background-image: url("/images/06-banner/banner-background.png");
   }
   .banner__header {
     width: auto;
