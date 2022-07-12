@@ -780,9 +780,9 @@ img {
 }
 @media screen and (max-width: 27.875rem) {
   .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.219)), url(../../images/06-banner/banner-background.png);
     background-position: top;
     background-size: cover;
+    background-image: url("/images/06-banner/banner-background.png");
   }
   .banner__header {
     width: auto;
