@@ -1,52 +1,56 @@
 @use '../01-utils/variables';
 
 h1 {
-    font-size: calc( 26px + (74 - 26) * ((100vw - 400px) / (1919 - 400)));
-    margin-bottom: clamp(15px, 3vw, 52px)
+    // font-size: calc( 26px + (74 - 26) * ((100vw - 400px) / (1919 - 400)));
+    font-size: calc( 1.625rem + (4.625 - 1.625) * ((100vw - 25rem) / (119.94 - 25)));
+    margin-bottom: clamp(0.9375rem, 3vw, 3.25rem)
 }
 
-h2 { font-size: calc( 22px + (45 - 22) * (100vw - 400px) / (1800 - 400)); }
+// h2 { font-size: calc( 22px + (45 - 22) * (100vw - 400px) / (1800 - 400)); }
+h2 { font-size: calc( 1.375rem + (2.8125 - 1.375) * (100vw - 25rem) / (112.5 - 25)); }
 
-.big { font-size: calc(18px + (30 - 18) * ((100vw - 400px) / (1919 - 400))); }
+
+// .big { font-size: calc(18px + (30 - 18) * ((100vw - 400px) / (1919 - 400))); }
+.big { font-size: calc( 1.125rem + (1.875 - 1.125) * ((100vw - 25rem) / (119.94 - 25))); }
+
+
 
 .hero__header__p {
-    // font-size: calc(16px + (30 - 16) * ((100vw - 400px) / (1919 - 400)));
-    // line-height: 160%;
     line-height: 180%;
-    margin-bottom: clamp(15px, 3vw, 66px);
+    margin-bottom: clamp(0.9375rem, 3vw, 4.125rem);
     width: 83%;
 }
 
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 120rem) {
     h1 { 
-        font-size: 74px;
-        margin-bottom: 52px;
+        font-size: 4.625rem;
+        margin-bottom: 3.25rem;
     }
     
-    h2 { font-size: 45px; }
+    h2 { font-size: 2.8125rem; }
 
-    .big { font-size: 30px; }
+    .big { font-size: 1.875rem; }
 
     .hero__header__p {
-        font-size: 30px;
-        margin-bottom: 66px;   
+        font-size: 1.875rem;
+        margin-bottom: 4.125rem;   
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
     h1 { 
-        font-size: 26px;
-        margin-bottom: 15px;
+        font-size: 1.625rem;
+        margin-bottom: 0.9375rem;
     }
     
-    h2 { font-size: 22px;    }
+    h2 { font-size: 1.375rem;    }
 
-    .big { font-size: 18px; }
+    .big { font-size: 1.125rem; }
 
     .hero__header__p {
-        font-size: 16px;
-        margin-bottom: 15px;
+        font-size: 1rem;
+        margin-bottom: 0.9375rem;
     }
     
 }

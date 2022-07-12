@@ -63,7 +63,6 @@ input[type="submit"] {
         text-transform: capitalize;
         margin-left: 0;
         padding: 0.625rem;
-        // background-color: var(--white);
         color: var(--black);
         margin-bottom: 0.9375rem;
     }
@@ -71,6 +70,5 @@ input[type="submit"] {
     input[type="submit"] {
         background-color: var(--black);
         color: var(--white);
-
     }
 }

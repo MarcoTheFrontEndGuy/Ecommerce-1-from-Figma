@@ -1,17 +1,14 @@
 
 .btn-big {
-    line-height: 160%;
     background-color: var(--grey-dark);
     color: var(--white);
     font-weight: 400;
-    padding-top: clamp(5px, .5vw, 21px);
-    padding-bottom: clamp(5px, .5vw, 21px);
-    padding-left: clamp(10px, 1vw, 26px);
-    padding-right: clamp(10px, 1vw, 26px);
-}
-
-.btn-big {
-    font-size: calc(16px + (30 - 16) * ((100vw - 400px) / (1919 - 400)));
+    font-size: calc(1rem + (1.875 - 1) * ((100vw - 25rem) / (119.9375 - 25)));
+    line-height: 160%;
+    padding-top: clamp(0.3125rem, .5vw, 1.3125rem);
+    padding-bottom: clamp(0.3125rem, .5vw, 1.3125rem);
+    padding-left: clamp(0.625rem, 1vw, 1.625rem);
+    padding-right: clamp(0.625rem, 1vw, 1.625rem);
 }
 
 .btn-big > i {
@@ -25,23 +22,19 @@
 }
 
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 120rem) {
     .btn-big {
-        font-size: 30px;
+        font-size: 1.875rem;
         color: rgb(255, 255, 255);
         background-color: black;
-        padding: 22px 26px;
+        padding: 1.375rem 1.625rem;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
     .btn-big {
-        padding: 10px 14px;
-        background: purple;
+        padding: 0.625rem 0.875rem;
     }
 }
 
 
-// ============================== 
-// ============================== 
-// ============================== 

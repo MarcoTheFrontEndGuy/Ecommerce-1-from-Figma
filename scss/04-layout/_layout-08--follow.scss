@@ -38,16 +38,13 @@
     .follow__instagram-products {
         grid-template-columns: repeat(3, 1fr);
     }
-
  }
 
  @media screen and (max-width: 28.125rem) {
     .follow__instagram-products {
         grid-template-columns: repeat(2, 1fr);
     }
-
  }
-
 
 .instagram-product--hover { 
     position: absolute;
@@ -63,8 +60,6 @@
     opacity: 0;
     cursor: pointer;
 }
-
-
 
 .instagram-product {
     overflow: hidden;

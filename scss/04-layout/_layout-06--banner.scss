@@ -1,5 +1,4 @@
 .banner {
-    // width: 100vw;
     min-height: 40.42vw;
     background-image: url(../../images/06-banner/banner-background.png);
     background-size: cover;
@@ -40,8 +39,8 @@
         margin-left: auto;
         position: relative;
     }
-    
 }
+
 @media screen and (max-width: 27.875rem) {
     .banner {
         background: linear-gradient(rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.219)), url(../../images/06-banner/banner-background.png);
@@ -56,6 +55,6 @@
         align-items: center;
         text-align: center;
         background: rgba(2, 3, 94, 0.164);
-        padding: 10px;
+        padding: 0.625rem;
     }
 }

@@ -1,11 +1,4 @@
 
-.header__search__form { 
-    display: none;
-    background-color: purple;
-    color: orange;
-}
-
-
 .header__search__form {
     position: absolute;
     top: 2.5rem;
@@ -16,7 +9,6 @@
     color: rgb(247, 247, 247);
     border: 0.125rem solid var(--grey-dark);
     border-radius: 0.5rem;
-
     display: none;
 }
 
@@ -25,7 +17,6 @@
 }
 
 .header__search__form__input {
-    background-color: rgb(56, 54, 54);
     background-color: var(--grey-light);
     color: var(--grey-dark);
     flex: 1;
